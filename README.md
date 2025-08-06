@@ -131,6 +131,16 @@ This will generate:
 
 ---
 
+## Challenges & Learnings
+
+- Resolved flickering issues during simultaneous VGA updates and PS/2 input by fine-tuning FSM timing and frame synchronization.
+- Learned to structure Verilog modules for clean testability, enabling simulation-driven debugging in ModelSim.
+- Debugged mismatched scan codes from the PS/2 keyboard by waveform tracing and refining debounce logic.
+- Built confidence in automating flows (Quartus + ModelSim) using Tcl and DO scripts to streamline iteration cycles.
+
+---
+
+
 ## About the Author
 **[Hyeonji Jung](https://linkedin.com/in/hyeonjijung-uoft)**, FPGA Design Intern @ Korea University (May–Sep 2025)  
 Email: [junghyeonji254@gmail.com](mailto:junghyeonji254@gmail.com)
