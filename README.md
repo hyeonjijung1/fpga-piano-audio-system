@@ -60,7 +60,7 @@
 ## System Architecture
 
 ![FPGA Piano Block Diagram](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/block_diagram_piano.png)
-*Figure: Detailed block diagram of the FPGA piano system, showing clock/reset fan-out, PS/2 keyboard, graphics and audio pipelines, and outputs.*
+- Figure: Detailed block diagram of the FPGA piano system, showing clock/reset fan-out, PS/2 keyboard, graphics and audio pipelines, and outputs.
 ---
 
 ## Build Automation
