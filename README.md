@@ -2,7 +2,7 @@
 
 ![FPGA Piano Demo](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/demo_photo.png)
 
-*Figure: VGA display lighting up on the “C” key.*
+*Figure: VGA display lighting up on the “J” key.*
 > A one‐click FPGA piano: real‐time audio generation, VGA visualization, and 16‐key button I/O. Fully automated from synthesis to simulation.
 
 ---
