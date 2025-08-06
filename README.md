@@ -6,7 +6,7 @@
 
 ## Quick Links
 
-- [Demo Video](https://drive.google.com/file/d/1-k1kQWv2bcY4y-GO6ZJZvzP8-Z2Uc33Q/view?resourcekey)**
+- [Demo Video](https://drive.google.com/file/d/1-k1kQWv2bcY4y-GO6ZJZvzP8-Z2Uc33Q/view?resourcekey)
 
 ---
 
