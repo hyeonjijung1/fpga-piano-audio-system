@@ -56,6 +56,16 @@
 
 ---
 
+## 🏗️ System Architecture
+
+![VGA & FSM pipeline](docs/images/fpga_vga_fsm.svg)  
+_Figure: ROM → FSM → VGA display pipeline._
+
+![PS/2 → Audio flow](docs/images/fpga_ps2_audio.svg)  
+_Figure: Keyboard input driving the audio module._
+
+---
+
 ## Build Automation
 
 - **`scripts/run_quartus.tcl`**  
@@ -74,9 +84,9 @@
 
 Based on synthesis and design intent, this project is engineered to:
 
-- **100 MHz clock** (10 ns period) timing closure in a 5-stage pipeline  
-- **< 10 % LUT** utilization of the Cyclone V fabric  
-- **< 5 % BRAM** utilization for all audio, VGA, and buffering resources  
+- Target : **100 MHz clock** (10 ns period) timing closure in a 5-stage pipeline  
+- Target :  **< 10 % LUT** utilization of the Cyclone V fabric  
+- Target : **< 5 % BRAM** utilization for all audio, VGA, and buffering resources  
 ---
 
 ## Getting Started
@@ -88,12 +98,13 @@ cd fpga-piano-audio-system
 ```
 This will generate:
 
-- reports/timing_max.txt (timing closure & slack)
+- reports/timing_max.txt (timing closure slack report)
 - reports/utilization.txt (resource usage)
 
 ---
 
 ## About the Author
-**Hyeonji Jung**, FPGA Design Intern @ Korea University (May–Sep 2025)  
-[LinkedIn](https://linkedin.com/in/hyeonjijung-uoft) • [Email](mailto:junghyeonji254@gmail.com)
+**[Hyeonji Jung](https://linkedin.com/in/hyeonjijung-uoft)**, FPGA Design Intern @ Korea University (May–Sep 2025)  
+Email: [junghyeonji254@gmail.com](mailto:junghyeonji254@gmail.com)
+
 
