@@ -5,7 +5,7 @@
 
 > A one-click FPGA piano with VGA output, PS/2 keyboard input, and audio I/O. Fully written in Verilog and automated from synthesis to simulation.
 
-**Technologies:** Verilog · VGA · PWM · PS/2 · Audio Codec · Tcl · Quartus · ModelSim
+**Technologies:** Verilog · VGA · PWM (Pulse-Width Modulation) · PS/2 · Audio Codec · Tcl · Quartus · ModelSim
 
 ---
 
@@ -17,7 +17,18 @@
 
 ![FPGA Piano Demo](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/demo_photo.png)
 
-*Figure1: VGA display lighting up on the “J” key.*
++*Figure 1: VGA output showing a keypress (“J”) in the piano UI.*
+
+---
+
+## Table of Contents
+- [Repo Structure](#-repo-structure)
+- [Key Features](#key-features)
+- [System Architecture](#system-architecture)
+- [Build Automation](#build-automation)
+- [Designed Performance Targets](#designed-performance-targets)
+- [Getting Started](#getting-started)
+- [About the Author](#about-the-author)
 
 ---
 
@@ -67,7 +78,7 @@
 
 ![FPGA Piano Block Diagram](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/block_diagram_piano.png)
 
- *Figure2: Block diagram of FPGA piano system showing subsystems.*
++*Figure 2: Block diagram of the full FPGA piano system architecture.*
 
  
 ---
