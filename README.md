@@ -18,7 +18,7 @@
 
 ![FPGA Piano Demo](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/demo_photo.png)
 
-+*Figure 1: VGA output showing a keypress (“J”) in the piano UI.*
+*Figure 1: VGA output showing a keypress (“J”) in the piano UI.*
 
 ---
 
@@ -79,7 +79,7 @@
 
 ![FPGA Piano Block Diagram](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/block_diagram_piano.png)
 
-+*Figure 2: Block diagram of the full FPGA piano system architecture.*
+*Figure 2: Block diagram of the full FPGA piano system architecture.*
 
  
 ---
