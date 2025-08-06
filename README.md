@@ -1,4 +1,7 @@
 # Verilog Piano on Cyclone V (DE1-SoC)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Platform: DE1-SoC](https://img.shields.io/badge/platform-DE1--SoC-blue)
+![Language: Verilog](https://img.shields.io/badge/language-Verilog-orange)
 
 > A one-click FPGA piano with VGA output, PS/2 keyboard input, and audio I/O. Fully written in Verilog and automated from synthesis to simulation.
 
@@ -110,7 +113,5 @@ This will generate:
 **[Hyeonji Jung](https://linkedin.com/in/hyeonjijung-uoft)**, FPGA Design Intern @ Korea University (May–Sep 2025)  
 Email: [junghyeonji254@gmail.com](mailto:junghyeonji254@gmail.com)
 
-![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
-![Platform: DE1-SoC](https://img.shields.io/badge/platform-DE1--SoC-blue)
-![Language: Verilog](https://img.shields.io/badge/language-Verilog-orange)
+
 
