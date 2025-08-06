@@ -4,14 +4,10 @@
 
 ---
 
-## 🚀 Quick Links
+## Quick Links
 
 - **Demo Video:**  
   https://drive.google.com/file/d/1-k1kQWv2bcY4y-GO6ZJZvzP8-Z2Uc33Q/view  
-- **Slides Overview:**  
-  https://docs.google.com/presentation/d/1mVGKNP_6rRCzFrcCEjO4WKDWorDyrl0JHLBCvOFSaMc  
-- **Live Demo / GitHub Pages:**  
-  https://your-pages.url  
 
 ---
 
@@ -48,7 +44,7 @@
 ├── .gitignore
 └── README.md
 ``` 
-## ✨ Key Features
+## Key Features
 
 - **Real-Time Audio:** PWM tone generation for all 16 keys  
 - **VGA Graphics:** 640×480 pixel display driven entirely in Verilog  
@@ -57,7 +53,7 @@
 
 ---
 
-## 🛠️ Build Automation
+## Build Automation
 
 - **`scripts/run_quartus.tcl`**  
   Opens the Quartus project, sets the top entity & all `src/**/*.v`, runs a full compile, and emits:  
@@ -71,15 +67,16 @@
   Cleans old reports, invokes both the Tcl and DO scripts, and collects outputs under `reports/`.
 
 ---
-## 📊 Designed Performance Targets
+## Designed Performance Targets
 
 Based on synthesis and design intent, this project is engineered to:
 
 - **100 MHz clock** (10 ns period) timing closure in a 5-stage pipeline  
 - **< 10 % LUT** utilization of the Cyclone V fabric  
 - **< 5 % BRAM** utilization for all audio, VGA, and buffering resources  
+---
 
-## 🏗️ Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/hyeonjijung1/fpga-piano-audio-system.git
@@ -90,3 +87,10 @@ This will generate:
 
 - reports/timing_max.txt (timing closure & slack)
 - reports/utilization.txt (resource usage)
+
+---
+
+## About the Author
+**Hyeonji Jung**, FPGA Design Intern @ Korea University (May–Sep 2025)  
+[LinkedIn](https://linkedin.com/in/hyeonjijung-uoft) • [Email](mailto:youremail@utoronto.ca)
+
