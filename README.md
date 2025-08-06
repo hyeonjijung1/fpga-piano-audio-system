@@ -47,3 +47,46 @@
 ├── .github/              # CI workflows (ci.yml)
 ├── .gitignore
 └── README.md
+``` 
+## ✨ Key Features
+
+- **Real-Time Audio:** PWM tone generation for all 16 keys  
+- **VGA Graphics:** 640×480 pixel display driven entirely in Verilog  
+- **Debounced Controls:** Robust PS/2 & button-matrix handling  
+- **One-Click Automation:** Full Quartus & ModelSim flows via Tcl + Bash  
+
+---
+
+## 🛠️ Build Automation
+
+- **`scripts/run_quartus.tcl`**  
+  Opens the Quartus project, sets the top entity & all `src/**/*.v`, runs a full compile, and emits:  
+  - `reports/timing_max.txt`  
+  - `reports/utilization.txt`
+
+- **`sim/simulate.do`**  
+  Compiles RTL in `src/` plus `sim/piano_system_tb.v`, runs the testbench in batch mode, then exits.
+
+- **`scripts/build.sh`**  
+  Cleans old reports, invokes both the Tcl and DO scripts, and collects outputs under `reports/`.
+
+---
+## 📊 Designed Performance Targets
+
+Based on synthesis and design intent, this project is engineered to:
+
+- **100 MHz clock** (10 ns period) timing closure in a 5-stage pipeline  
+- **< 10 % LUT** utilization of the Cyclone V fabric  
+- **< 5 % BRAM** utilization for all audio, VGA, and buffering resources  
+
+## 🏗️ Getting Started
+
+```bash
+git clone https://github.com/hyeonjijung1/fpga-piano-audio-system.git
+cd fpga-piano-audio-system
+./scripts/build.sh
+```
+This will generate:
+
+- reports/timing_max.txt (timing closure & slack)
+- reports/utilization.txt (resource usage)
