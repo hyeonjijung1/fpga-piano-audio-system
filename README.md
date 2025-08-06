@@ -59,13 +59,33 @@
 
 ## System Architecture
 
-![VGA & FSM pipeline](docs/images/fpga_vga_fsm.svg)  
-_Figure: ROM → FSM → VGA display pipeline._
+### VGA → FSM → Display Pipeline
 
-![PS/2 → Audio flow](docs/images/fpga_ps2_audio.svg)  
-_Figure: Keyboard input driving the audio module._
-
+```mermaid
+flowchart LR
+  subgraph VGA_Pipeline
+    direction LR
+    ROM["ROM\nInputs: X[8], Y[7]\nOutputs: color[3]"]
+    FSM["FSM\nInputs: color[3]\nOutputs: color, X[8], Y[7], plot"]
+    Display["VGA Display\nInputs: color, X[8], Y[7], plot"]
+    ROM --> FSM --> Display
+  end
 ---
+flowchart TD
+  subgraph PS2_Keybd
+    direction LR
+    PS2["PS/2 Controller\nInputs: clock_50, reset, the_command[7:0], send_command\nOutputs: received_data[7:0], received_data_en, PS2_CLK, PS2_DAT"]
+    SW["Switch Register\nOutputs: SW[5:0]"]
+    PS2 --> SW
+  end
+
+  subgraph Audio_Path
+    direction LR
+    Audio["Audio Module\nInputs: clock_50, audio_adctrl, reset,\nclear_audio_out_mem, clear_audio_in_mem,\nleft_ch_audio_out, right_ch_audio_out,\nwrite_audio_out, read_audio_in\nOutputs: AUD_BCLK, AUD_ADCLRCK, AUD_DACLRCK, AUD_XCK, AUD_DACDAT,\neff_ch_audio_in, right_ch_audio_in, audio_out_allowed"]
+    Speaker["Speaker"]
+    SW --> Audio --> Speaker
+  end
+```
 
 ## Build Automation
 
