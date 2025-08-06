@@ -62,7 +62,7 @@
 
 ![FPGA Piano Block Diagram](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/block_diagram_piano.png)
 
- *Figure2: Detailed block diagram of the FPGA piano system, showing clock/reset fan-out, PS/2 keyboard, graphics and audio pipelines, and outputs.*
+ *Figure2: Block diagram of FPGA piano system showing subsystems.*
 
  
 ---
@@ -85,9 +85,9 @@
 
 Based on synthesis and design intent, this project is engineered to:
 
-- Target : **100 MHz clock** (10 ns period) timing closure in a 5-stage pipeline  
-- Target :  **< 10 % LUT** utilization of the Cyclone V fabric  
-- Target : **< 5 % BRAM** utilization for all audio, VGA, and buffering resources  
+- **100 MHz clock** (10 ns period) timing closure in a 5-stage pipeline  
+- **< 10 % LUT** utilization of the Cyclone V fabric  
+- **< 5 % BRAM** utilization for all audio, VGA, and buffering resources  
 ---
 
 ## Getting Started
