@@ -92,5 +92,5 @@ This will generate:
 
 ## About the Author
 **Hyeonji Jung**, FPGA Design Intern @ Korea University (May–Sep 2025)  
-[LinkedIn](https://linkedin.com/in/hyeonjijung-uoft) • [Email](mailto:junghyeonji254@gmail.com)
+[LinkedIn](https://linkedin.com/in/hyeonjijung-uoft) • [Email](junghyeonji254@gmail.com)
 
