@@ -6,6 +6,7 @@
 > A one-click FPGA piano with VGA output, PS/2 keyboard input, and audio I/O. Fully written in Verilog and automated from synthesis to simulation.
 
 **Technologies:** Verilog · VGA · PWM (Pulse-Width Modulation) · PS/2 · Audio Codec · Tcl · Quartus · ModelSim
+> Built from scratch with industry-aligned practices in RTL modularity, clocked design, and simulation-driven validation. 
 
 ---
 
