@@ -59,33 +59,9 @@
 
 ## System Architecture
 
-### VGA → FSM → Display Pipeline
-
-```mermaid
-flowchart LR
-  subgraph VGA_Pipeline
-    direction LR
-    ROM["ROM\nInputs: X[8], Y[7]\nOutputs: color[3]"]
-    FSM["FSM\nInputs: color[3]\nOutputs: color, X[8], Y[7], plot"]
-    Display["VGA Display\nInputs: color, X[8], Y[7], plot"]
-    ROM --> FSM --> Display
-  end
+![FPGA Piano Block Diagram](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/block_diagram_piano.png)
+*Figure: Detailed block diagram of the FPGA piano system, showing clock/reset fan-out, PS/2 keyboard, graphics and audio pipelines, and outputs.*
 ---
-flowchart TD
-  subgraph PS2_Keybd
-    direction LR
-    PS2["PS/2 Controller\nInputs: clock_50, reset, the_command[7:0], send_command\nOutputs: received_data[7:0], received_data_en, PS2_CLK, PS2_DAT"]
-    SW["Switch Register\nOutputs: SW[5:0]"]
-    PS2 --> SW
-  end
-
-  subgraph Audio_Path
-    direction LR
-    Audio["Audio Module\nInputs: clock_50, audio_adctrl, reset,\nclear_audio_out_mem, clear_audio_in_mem,\nleft_ch_audio_out, right_ch_audio_out,\nwrite_audio_out, read_audio_in\nOutputs: AUD_BCLK, AUD_ADCLRCK, AUD_DACLRCK, AUD_XCK, AUD_DACDAT,\neff_ch_audio_in, right_ch_audio_in, audio_out_allowed"]
-    Speaker["Speaker"]
-    SW --> Audio --> Speaker
-  end
-```
 
 ## Build Automation
 
