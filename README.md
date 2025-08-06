@@ -81,6 +81,16 @@
 
 *Figure 2: Block diagram of the full FPGA piano system architecture.*
 
+> The system is architected as a modular RTL design, separating concerns across five main subsystems:
+
+- Keyboard Input Subsystem : Interfaces with the PS/2 keyboard, decodes scan codes, and converts them into control signals.
+- Audio Subsystem : Generates real-time audio tones using PWM based on the pressed keys.
+- Graphics Subsystem : Dynamically renders the keypress visualization using pixel-level VGA control at 640×480 resolution.
+- Control Logic & FSMs : Coordinates drawing, erasing, and state transitions with clean timing and reset handling.
+- Top-Level Integration : Integrates all modules with clocked interconnects, simulation hooks, and synthesis-friendly wiring.
+
+This architecture enables clean simulation, independent module verification, and fast synthesis with minimal timing violations, achieving <10% LUT and <5% BRAM usage on the Cyclone V fabric.
+
  
 ---
 
