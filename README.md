@@ -1,4 +1,4 @@
-# 🎹 Verilog Piano on Cyclone V (DE1-SoC)
+# Verilog Piano on Cyclone V (DE1-SoC)
 
 > A one‐click FPGA piano: real‐time audio generation, VGA visualization, and 16‐key button I/O. Fully automated from synthesis to simulation.
 
