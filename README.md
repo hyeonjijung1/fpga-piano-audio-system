@@ -57,7 +57,7 @@
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ![VGA & FSM pipeline](docs/images/fpga_vga_fsm.svg)  
 _Figure: ROM → FSM → VGA display pipeline._
