@@ -1,9 +1,6 @@
 # Verilog Piano on Cyclone V (DE1-SoC)
 
-![FPGA Piano Demo](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/demo_photo.png)
-
-*Figure: VGA display lighting up on the “J” key.*
-> A one‐click FPGA piano: real‐time audio generation, VGA visualization, and 16‐key button I/O. Fully automated from synthesis to simulation.
+> A one-click FPGA piano with VGA output, PS/2 keyboard input, and audio I/O. Fully written in Verilog and automated from synthesis to simulation.
 
 ---
 
@@ -11,6 +8,9 @@
 
 - **Demo:** [Demo Video](https://drive.google.com/file/d/1-k1kQWv2bcY4y-GO6ZJZvzP8-Z2Uc33Q/view?resourcekey)
 - **Full System Code:** [full_system.v](https://github.com/hyeonjijung1/fpga-piano-audio-system/blob/main/docs/full_system.v)
+![FPGA Piano Demo](https://raw.githubusercontent.com/hyeonjijung1/fpga-piano-audio-system/main/docs/demo_photo.png)
+
+*Figure: VGA display lighting up on the “J” key.*
 
 ---
 
