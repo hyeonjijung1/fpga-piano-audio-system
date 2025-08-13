@@ -94,6 +94,13 @@ This architecture enables clean simulation, independent module verification, and
 
 ---
 
+## Simulation Validation
+
+![Waveform Simulation – EPWave](docs/waveform_epwave.png)  
+*Figure 3: EPWave waveform showing note sequence timing, amplitude generation, and FSM control for piano playback.*
+
+---
+
 ## Build Automation
 
 - **`scripts/run_quartus.tcl`**  
