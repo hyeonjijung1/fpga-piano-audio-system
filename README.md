@@ -149,8 +149,11 @@ This will generate:
 
 
 ## About the Author
-**[Hyeonji Jung](https://linkedin.com/in/hyeonjijung-uoft)**, FPGA Design Intern @ Korea University (May–Sep 2025)  
-Email: [junghyeonji254@gmail.com](mailto:junghyeonji254@gmail.com)
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hyeonji%20Jung-blue?logo=linkedin)](https://www.linkedin.com/in/dianajung-uoft/)  
+[![Email](https://img.shields.io/badge/Email-dianajunguoftece%40gmail.com-red?logo=gmail)](mailto:dianajunguoftece@gmail.com)
+
+
+Diana Jung, FPGA Design Intern @ Korea University (May–Sep 2025) 
 
 
